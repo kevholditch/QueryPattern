@@ -15,7 +15,7 @@ namespace QueryPatternExample
 
             var categories = queryExector.Execute<GetCategoriesMatchingNameCriteria, GetCategoriesMatchingNameResult>(new GetCategoriesMatchingNameCriteria { Name = name }).Categories;
 
-            Console.WriteLine("catgories found matching name: {0}", name);
+            Console.WriteLine("categories found matching name: {0}", name);
 
             foreach (var category in categories)
                 Console.WriteLine(category);
